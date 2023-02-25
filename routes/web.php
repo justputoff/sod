@@ -22,6 +22,10 @@ Route::get('/home', function () {
     return "ini home";
 });
 
+Route::get('/home', function () {
+    return "ini About";
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
